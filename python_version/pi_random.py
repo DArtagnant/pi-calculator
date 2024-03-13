@@ -5,7 +5,7 @@ def pi_random(reps):
     for i in range(reps):
         x = random()
         y = random()
-        if y <= (1 - x**2) ** 0.5 :
+        if y <= (1 - x**2) ** 0.5:
             n += 1
     return 4 * n / (i + 1)
 
