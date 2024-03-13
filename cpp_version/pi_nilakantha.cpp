@@ -1,12 +1,12 @@
 #include <iostream>
 #include <iomanip>
+#include <boost/multiprecision/cpp_dec_float.hpp>
 
-using namespace std;
+const unsigned int DECIMALES = 100;
+typedef boost::multiprecision::cpp_dec_float<DECIMALES> veryLong;
 
 int main() {
-    std::decimal::decimal64::decimal64 test;
-    
-    cout << fixed << setprecision(50);
-    double myFloat = 0.123456789123456789123456789123456789123456789;
-    cout << myFloat << endl;
+    std::cout << std::fixed << std::setprecision(DECIMALES);
+    veryLong myFloat = veryLong("0.123456789123456789123456789123456789123456789");
+    std::cout << myFloat.str(DECIMALES, std::ios_base::dec) << std::endl;
 }
