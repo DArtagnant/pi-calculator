@@ -1,8 +1,5 @@
 from decimal import Decimal, getcontext
 
-#Time Complexity: O(N * logN * loglogN) N = reps
-#Auxilary Space : O(1)
-
 def pi_nilakantha(reps):
     approx = Decimal(3)
     sign = 1

@@ -17,6 +17,6 @@ VeryLong pi_nilakantha(VeryLong reps) {
 
 int main() {
     std::cout << std::fixed << std::setprecision(DECIMALES);
-    VeryLong approx_pi = pi_nilakantha(VeryLong("100000"));
+    VeryLong approx_pi = pi_nilakantha(VeryLong("10000"));
     std::cout << approx_pi.str(DECIMALES, std::ios_base::dec) << std::endl;
 }
