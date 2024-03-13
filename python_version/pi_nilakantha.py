@@ -4,7 +4,7 @@ from decimal import Decimal, getcontext
 #Auxilary Space : O(1)
 
 def pi_nilakantha(reps):
-    approx = Decimal(3.0)
+    approx = Decimal(3)
     sign = 1
     for n in range(2, (2 * reps) + 1, 2):
         approx += sign * 4 / Decimal(n * (n + 1) * (n + 2))
